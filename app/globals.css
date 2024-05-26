@@ -1,33 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Inter;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+  /* Buttons */
+  
+  .btn_dark { 
+    @apply  border-black-10 bg-black-10 px-5 py-2 text-white
   }
+
+  .btn_dark_white_border { 
+    @apply  border-white bg-black-10 px-5 py-2 text-white
+  }
+
+  .btn_white { 
+    @apply  border-white bg-white px-5 py-2 text-black-10
+  }
+
+  .btn_green { 
+    @apply  border-black-10 bg-green-50 px-12 py-2 text-black-10
+  }
+  
+  /* Margins and Padding */
+
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-20 3xl:px-0;
+  }
+  
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+
+  /* FONTS */
+
+  /* Regular */
+  .regular-12 {
+    @apply text-[12px] font-[400] leading-[125%];
+  }
+
+  .regular-14 {
+    @apply text-[14px] font-[400] leading-[150%];
+  }
+
+  .regular-16 {
+    @apply text-[16px] font-[400] leading-[125%];
+  }
+
+  .regular-24 {
+    @apply text-[24px] font-[400] leading-[125%];
+  }
+
+  .regular-32 {
+    @apply text-[32px] font-[400] leading-[125%];
+  }
+
+  .regular-40 {
+    @apply text-[40px] font-[400] leading-[125%];
+  }
+
+  .regular-104 {
+    @apply text-[104px] font-[400] leading-[125%];
+  }
+
+  .regular-112 {
+    @apply text-[112px] font-[400] leading-[125%];
+  }
+
+  .regular-218 {
+    @apply text-[218px] font-[400] leading-[125%];
+  }
+
+  .regular-286 {
+    @apply text-[286px] font-[400];
+  }
+
+ 
+  /* Bold */
+  .bold-14 {
+    @apply text-[14px] font-[700] leading-[125%];
+  }
+
+  .bold-16 {
+    @apply text-[16px] font-[700] leading-[125%];
+  }
+
+  .bold-24 {
+    @apply text-[24px] font-[700] leading-[125%];
+  }
+
+  .bold-32 {
+    @apply text-[32px] font-[700] leading-[125%];
+  }
+
+  .bold-64 {
+    @apply text-[64px] font-[700] leading-[125%];
+  }
+
+  .bold-104 {
+    @apply text-[104px] font-[700] leading-[125%];
+  }
+
+  .bold-112 {
+    @apply text-[112px] font-[700] leading-[125%];
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
