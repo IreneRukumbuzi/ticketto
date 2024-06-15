@@ -17,8 +17,8 @@ const Footer = () => {
 
         <div className="border bg-white opacity-10 my-10" />
 
-        <div className="flex flex-wrap md:flex-nowrap">
-          <div className="w-full md:w-1/2 my-4">
+        <div className="flex flex-wrap justify-between md:flex-nowrap">
+          <div className=" my-4">
             <Button
               type="button"
               title="Join our Newsletter"
@@ -26,8 +26,8 @@ const Footer = () => {
             />
           </div>
 
-          <div className="w-full md:w-1/2 flex flex-wrap md:flex-nowrap justify-evenly">
-            <div className="w-full md:w-1/2">
+          <div className=" flex flex-wrap md:flex-nowrap justify-between w-1/2">
+            <div className="">
               <FooterColumn title={FOOTER_LINKS.title}>
                 <ul className="regular-16 flex flex-col gap-4 text-white">
                   {FOOTER_LINKS.links.map((link) => (
@@ -38,7 +38,7 @@ const Footer = () => {
                 </ul>
               </FooterColumn>
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="">
               <FooterColumn title={SOCIALS.title}>
                 <ul className="regular-16 flex flex-col gap-4 text-white">
                   {SOCIALS.links.map((link) => (
@@ -49,7 +49,7 @@ const Footer = () => {
                 </ul>
               </FooterColumn>
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="">
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
                 <ul className="regular-16 flex flex-col gap-4 text-white">
                   {FOOTER_CONTACT_INFO.links.map((link) => (

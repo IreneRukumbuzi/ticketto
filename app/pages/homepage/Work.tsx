@@ -1,13 +1,13 @@
 import Image from "next/image";
-import Button from "./Button";
-import Title from "./Title";
+import Button from "../../../components/common/Button";
+import Title from "../../../components/common/Title";
 import Paragraph from "./Paragraph";
 
 const Work = () => {
   return (
     <section className="bg-white mb-24">
       <div className="max-container padding-container">
-        <div className="flexBetween pt-32">
+        <div className="md:flexBetween pt-32">
           <Title title="Work" variant="bold-104" color="black-10" />
           <Button
             title="See all Projects"
@@ -17,7 +17,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 py-10 w-full gap-5">
+        <div className="grid md:grid-cols-2 py-10  w-full gap-[25px]">
           <div className="gap-5">
             <Image
               src="/work-phone.png"
@@ -40,7 +40,7 @@ const Work = () => {
             <Image
               src="/stream.png"
               alt="Stream"
-              width={627}
+              width={628}
               height={679}
               className="rounded-lg mb-6"
             />

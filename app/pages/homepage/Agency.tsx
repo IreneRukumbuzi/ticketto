@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Paragraph from "./Paragraph";
-import Title from "./Title";
-import Button from "./Button";
+import Title from "../../../components/common/Title";
+import Button from "../../../components/common/Button";
 
 const Agency = () => {
   return (

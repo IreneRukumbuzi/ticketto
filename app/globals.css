@@ -11,7 +11,25 @@
 }
 
 body {
-  font-family: Inter;
+  font-family: "girloy";
+}
+
+@font-face {
+  font-family: "girloy";
+  src: url('../public/fonts/Gilroy-Light.ttf') format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "girloy";
+  src: url("../public/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "girloy";
+  src: url("../public/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 @layer utilities {
@@ -64,39 +82,39 @@ body {
 
   /* Regular */
   .regular-12 {
-    @apply text-[12px] font-[400] leading-[125%];
+    @apply text-[12px];
   }
 
   .regular-14 {
-    @apply text-[14px] font-[400] leading-[150%];
+    @apply text-[14px];
   }
 
   .regular-16 {
-    @apply text-[16px] font-[400] leading-[125%];
+    @apply text-[16px];
   }
 
   .regular-24 {
-    @apply text-[24px] font-[400] leading-[125%];
+    @apply text-[24px];
   }
 
   .regular-32 {
-    @apply text-[32px] font-[400] leading-[125%];
+    @apply text-[32px];
   }
 
   .regular-40 {
-    @apply text-[40px] font-[400] leading-[125%];
+    @apply text-[40px];
   }
 
   .regular-104 {
-    @apply text-[104px] font-[400] leading-[125%];
+    @apply text-[104px];
   }
 
   .regular-112 {
-    @apply text-[112px] font-[400] leading-[125%];
+    @apply text-[112px];
   }
 
   .regular-218 {
-    @apply text-[218px] font-[400] leading-[125%];
+    @apply text-[218px] font-[400];
   }
 
   .regular-286 {
@@ -106,31 +124,31 @@ body {
  
   /* Bold */
   .bold-14 {
-    @apply text-[14px] font-[700] leading-[125%];
+    @apply text-[14px];
   }
 
   .bold-16 {
-    @apply text-[16px] font-[700] leading-[125%];
+    @apply text-[16px];
   }
 
   .bold-24 {
-    @apply text-[24px] font-[700] leading-[125%];
+    @apply text-[24px];
   }
 
   .bold-32 {
-    @apply text-[32px] font-[700] leading-[125%];
+    @apply text-[32px];
   }
 
   .bold-64 {
-    @apply text-[64px] font-[700] leading-[125%];
+    @apply text-[64px];
   }
 
   .bold-104 {
-    @apply text-[104px] font-[700] leading-[125%];
+    @apply text-[104px];
   }
 
   .bold-112 {
-    @apply text-[112px] font-[700] leading-[125%];
+    @apply text-[112px];
   }
 }
 

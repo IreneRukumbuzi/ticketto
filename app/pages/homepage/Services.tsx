@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Title from "./Title";
+import Title from "../../../components/common/Title";
 import Paragraph from "./Paragraph";
-import Button from "./Button";
+import Button from "../../../components/common/Button";
 
 const Services = () => {
   return (
