@@ -139,6 +139,10 @@ body {
     @apply text-[32px];
   }
 
+  .bold-48 {
+    @apply text-[48px];
+  }
+
   .bold-64 {
     @apply text-[64px];
   }
